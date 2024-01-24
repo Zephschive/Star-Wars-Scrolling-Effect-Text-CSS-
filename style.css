@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+body {
+  background: rgb(20,20,20);
+  overflow: hidden;
+  font-family: 'Poppins',sans-serif;
+  margin: 50% 0 0 0;
+  position: relative;
+}
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(20,20,20,1) 40%, rgba(20,20,20,0) 100%);
+  
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200%;
+  width: 60%;
+  margin: 0 auto;
+  perspective: 750px;
+}
+.scroll-text {
+  color: #ffc909;
+    
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  animation: scroll 80s  linear forwards infinite;
+}
+h1,h2 {
+font-size: 12.5rem;
+  text-align: center;
+}
+h1
+{
+    letter-spacing: 50px;
+    font-family: 'Alfa Slab One', serif;
+    text-transform: uppercase;
+}
+
+
+
+@keyframes scroll {
+	from { top: 0; transform: translateZ(0) rotateX(20deg); }
+	to { top: -7500px; transform: translateZ(-2500px) rotateX(21deg); }
+}
